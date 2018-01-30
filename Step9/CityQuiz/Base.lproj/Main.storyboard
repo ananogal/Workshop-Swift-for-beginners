@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CityQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="London" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uzj-cV-5LN">
+                                <rect key="frame" x="106" y="30" width="108.5" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kl4-3r-pfN">
+                                <rect key="frame" x="85" y="193" width="150" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kl4-3r-pfN" secondAttribute="height" multiplier="3:2" id="whF-VI-q3U"/>
+                                </constraints>
+                                <state key="normal" image="Lisbon"/>
+                                <connections>
+                                    <action selector="showLisbon" destination="BYZ-38-t0r" eventType="touchUpInside" id="FxV-74-YW4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eW5-Bm-ApI">
+                                <rect key="frame" x="85" y="433" width="150" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eW5-Bm-ApI" secondAttribute="height" multiplier="3:2" id="hdq-YO-vnT"/>
+                                </constraints>
+                                <state key="normal" image="Paris"/>
+                                <connections>
+                                    <action selector="showParis" destination="BYZ-38-t0r" eventType="touchUpInside" id="4HM-P2-rzM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oj-bz-g1F">
+                                <rect key="frame" x="85" y="313" width="150" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5oj-bz-g1F" secondAttribute="height" multiplier="3:2" id="V4O-Bb-T3x"/>
+                                </constraints>
+                                <state key="normal" image="London"/>
+                                <connections>
+                                    <action selector="showLondon" destination="BYZ-38-t0r" eventType="touchUpInside" id="DWl-Zq-LiI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyc-v7-RK6">
+                                <rect key="frame" x="85" y="74" width="150" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dyc-v7-RK6" secondAttribute="height" multiplier="3:2" id="J3v-W8-orF"/>
+                                    <constraint firstAttribute="height" constant="100" id="Tsg-dI-iDw"/>
+                                </constraints>
+                                <state key="normal" image="Barcelona"/>
+                                <connections>
+                                    <action selector="showBarcelona" destination="BYZ-38-t0r" eventType="touchUpInside" id="umQ-sD-GiH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uzj-cV-5LN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="1VC-L2-jPo"/>
+                            <constraint firstItem="kl4-3r-pfN" firstAttribute="height" secondItem="Dyc-v7-RK6" secondAttribute="height" id="2fZ-tL-2uC"/>
+                            <constraint firstItem="Dyc-v7-RK6" firstAttribute="top" secondItem="Uzj-cV-5LN" secondAttribute="bottom" constant="8" id="40d-XA-P0J"/>
+                            <constraint firstItem="kl4-3r-pfN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4F7-MI-h7G"/>
+                            <constraint firstItem="kl4-3r-pfN" firstAttribute="top" secondItem="Dyc-v7-RK6" secondAttribute="bottom" constant="19" id="6Rz-hj-sTQ"/>
+                            <constraint firstItem="eW5-Bm-ApI" firstAttribute="top" secondItem="5oj-bz-g1F" secondAttribute="bottom" constant="20" id="8b5-nO-EbZ"/>
+                            <constraint firstItem="eW5-Bm-ApI" firstAttribute="height" secondItem="5oj-bz-g1F" secondAttribute="height" id="9o5-n5-Kgo"/>
+                            <constraint firstItem="5oj-bz-g1F" firstAttribute="top" secondItem="kl4-3r-pfN" secondAttribute="bottom" constant="20" id="KdY-PN-VdR"/>
+                            <constraint firstItem="eW5-Bm-ApI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Khi-In-N1a"/>
+                            <constraint firstItem="Dyc-v7-RK6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YcE-tQ-IcE"/>
+                            <constraint firstItem="5oj-bz-g1F" firstAttribute="height" secondItem="kl4-3r-pfN" secondAttribute="height" id="k5X-N3-m0t"/>
+                            <constraint firstItem="5oj-bz-g1F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kSz-nW-B3k"/>
+                            <constraint firstItem="Uzj-cV-5LN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nIH-Dd-dOU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="Uzj-cV-5LN" id="XeJ-wk-L7d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="-349"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Barcelona" width="1280" height="800"/>
+        <image name="Lisbon" width="1280" height="800"/>
+        <image name="London" width="1280" height="800"/>
+        <image name="Paris" width="1280" height="800"/>
+    </resources>
+</document>
